@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduford University</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="./img/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="ri-icon ri-close-line" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="ri-icon ri-menu-3-fill" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <!-- --------- About Us Content ---------- -->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We are the World's largest university</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            saepe quos fugit perspiciatis tempora repellendus deserunt itaque
+            cumque laudantium, consequatur, corrupti eos distinctio quidem modi.
+            Tempora suscipit eius deleniti illum ipsam sapiente ratione omnis
+            adipisci quas, odit animi inventore, cum labore. Veritatis libero
+            exercitationem eius praesentium consectetur delectus mollitia
+            consequuntur harum, nostrum dolores repellendus eos incidunt.
+          </p>
+          <a href="#" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col"><img src="./img/about.jpg" alt="About" /></div>
+      </div>
+    </section>
+
+    <!-- --------- Footer ---------- -->
+    <footer>
+      <h4>About US</h4>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut molestiae
+        beatae laudantium dolorem architecto pariatur<br />ipsum quas iure. Quia
+        odio animi facere aspernatur nostrum?
+      </p>
+      <div class="icons">
+        <i class="ri-social ri-facebook-fill"></i>
+        <i class="ri-social ri-instagram-fill"></i>
+        <i class="ri-social ri-twitter-fill"></i>
+        <i class="ri-social ri-linkedin-fill"></i>
+      </div>
+    </footer>
+
+    <!-- --------- Javascript for Toggle Menu --------- -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
